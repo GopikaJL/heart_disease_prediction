@@ -9,7 +9,7 @@ app = Flask(__name__, static_folder='static')
 def index():
     return render_template('app.html')
 
-
+root = os.path.dirname(__file__)
 @app.route('/result', methods=['POST', 'GET'])
 def result():
    
